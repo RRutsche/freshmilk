@@ -1,0 +1,26 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: $navbar-height;
+	z-index: 10;
+	background-color: $color-cyan-1;
+
+	.logo {
+		position: absolute;
+		top: $default-spacing;
+		left: $default-spacing;
+		img {
+			height: 40px;
+		}
+	}
+	.links {
+		position: absolute;
+		top: $default-spacing;
+		right: $default-spacing;
+		span {
+			margin-right: $default-spacing;
+		}
+	}
+}

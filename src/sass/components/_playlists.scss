@@ -1,0 +1,55 @@
+.playlists {
+	@include flex(0 1 auto);
+	margin-right: $default-spacing*2;
+
+	.playlists-title {
+		font-size: $font-size-big;
+		margin: $default-spacing;
+	}
+	
+	.playlists-inner {
+		border: 1px solid $color-border-default;
+		border-radius: $border-radius;
+		height: 500px;
+		overflow-y: auto;
+		@include display-flex();
+		@include flex-direction(column);
+		input {
+			border-radius: $border-radius $border-radius 0 0;
+		}
+		.playlist-selection {
+			@include display-flex();
+			@include flex-direction(row);
+			@include flex(1 1 auto);
+			.playlist-names {
+				@include flex(0 1 auto);
+				display: inline-block;
+				vertical-align: top;
+				width: 120px;
+				padding: $default-spacing;
+				.playlist-name {
+					cursor: pointer;
+					padding-bottom: $default-spacing/2;
+					padding-right: $default-spacing;
+					border-right: 1px solid $color-border-default;
+					&.active {
+						font-weight: bold;
+					}
+				}
+			}
+			.playlist-videos {
+				@include flex(0 1 auto);
+				display: inline-block;
+				vertical-align: top;
+				width: 300px;
+				padding: $default-spacing;
+				li {
+					cursor: pointer;
+					overflow-x: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+			}
+		}
+	}
+}

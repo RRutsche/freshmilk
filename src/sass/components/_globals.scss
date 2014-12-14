@@ -1,0 +1,42 @@
+
+@font-face {
+	font-family: 'Frutiger Bold';
+	src: url("/font/frutigerltstd-bold.eot");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Frutiger Roman';
+	src: url("/font/frutigerltstd-roman.eot");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background: $color-light-grey;
+	color: $color-dark-grey;
+	font-family: $font_normal;
+	font-size: $font-size-normal;
+	width: 100%;
+	height: 100%;
+	@include user-select(none);
+}
+
+@mixin alpha-background-color($attribute, $color, $background) {
+	$percent: alpha($color) * 100%;
+	$opaque: opacify($color, 1);
+	$solid-color: mix($opaque, $background, $percent);
+	#{$attribute}: $solid-color;
+	#{$attribute}: $color;
+}
+
+.btn {
+	&:focus, &:active, &:active:focus {
+		outline: none;
+	}
+}

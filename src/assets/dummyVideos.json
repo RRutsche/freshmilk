@@ -1,0 +1,161 @@
+{
+    "count": 483, 
+    "next": "http://nexxt.freshmilk.de/api/videos/?page=2", 
+    "previous": null, 
+    "results": [
+        {
+            "id": 198881, 
+            "additional_id": "fmasd1001", 
+            "modified": "2014-11-19T10:57:45Z", 
+            "title": "The Dummy One",
+            "img": "http://static.dezeen.com/uploads/2014/02/Catch-of-the-Day-music-video-by-Isobel-Knowles-for-Sally-Seltmann_03.jpg",
+            "active": true, 
+            "publisher": [
+                {
+                    "id": 198881, 
+                    "name": "Freshmilk NetTV"
+                }
+            ]
+        }, 
+        {
+            "id": 298881, 
+            "additional_id": "fmasd1000", 
+            "modified": "2014-11-19T10:57:45Z", 
+            "title": "The Dummy Forgotten", 
+            "img": "http://ralev.com/wp-content/uploads/2012/05/perfect-skies-music-video-01.jpg",
+            "active": true, 
+            "publisher": [
+                {
+                    "id": 198881, 
+                    "name": "Freshmilk NetTV"
+                }
+            ]
+        }, 
+        {
+            "id": 398881, 
+            "additional_id": "fmasd994", 
+            "modified": "2014-11-19T10:57:45Z", 
+            "title": "Dummy Breton", 
+            "img": "http://www.thisiscolossal.com/wp-content/uploads/2013/01/paper-11.jpg",
+            "active": true, 
+            "publisher": [
+                {
+                    "id": 198881, 
+                    "name": "Freshmilk NetTV"
+                }
+            ]
+        }, 
+        {
+            "id": 498881, 
+            "additional_id": "fmasd993", 
+            "modified": "2014-11-19T10:57:45Z", 
+            "title": "Dummy Novacane", 
+            "img": "http://upload.wikimedia.org/wikipedia/en/e/e2/Differently_Music_Video_-_Cassie_Davis_Screenshot.jpg",
+            "active": true, 
+            "publisher": [
+                {
+                    "id": 198881, 
+                    "name": "Freshmilk NetTV"
+                }
+            ]
+        }, 
+        {
+            "id": 598881, 
+            "additional_id": "fmasd992", 
+            "modified": "2014-11-19T10:57:45Z", 
+            "title": "Dummy Halloween", 
+            "img": "http://cdn.hitfix.com/photos/5826028/kendrick-lamar-i-music-video_article_story_large.jpg",
+            "active": true, 
+            "publisher": [
+                {
+                    "id": 198881, 
+                    "name": "Freshmilk NetTV"
+                }
+            ]
+        }, 
+        {
+            "id": 698881, 
+            "additional_id": "fmasd991", 
+            "modified": "2014-11-19T10:57:45Z", 
+            "title": "Dummy Hot Dogs", 
+            "img": "http://static.dezeen.com/uploads/2013/03/dezeen_Dream-music-video-by-Cauboyz_1.jpg",
+            "active": true, 
+            "publisher": [
+                {
+                    "id": 198881, 
+                    "name": "Freshmilk NetTV"
+                }
+            ]
+        }, 
+        {
+            "id": 798881, 
+            "additional_id": "fmasd988", 
+            "modified": "2014-11-19T10:57:45Z", 
+            "title": "Dummy Curse", 
+            "img": "http://wittyandpretty.com/wp-content/uploads/2014/10/jimmy-fallon-EW-music-video-2-800x600.png",
+            "active": true, 
+            "publisher": [
+                {
+                    "id": 198881, 
+                    "name": "Freshmilk NetTV"
+                }
+            ]
+        }, 
+        {
+            "id": 898881, 
+            "additional_id": "fmasd987", 
+            "modified": "2014-11-19T10:57:45Z", 
+            "title": "Dummy Street", 
+            "img": "http://david-garrett.com/wp-content/uploads/2012/08/IMG_0157.jpg",
+            "active": true, 
+            "publisher": [
+                {
+                    "id": 198881, 
+                    "name": "Freshmilk NetTV"
+                }
+            ]
+        },
+        {
+            "id": 698343881, 
+            "additional_id": "fmasd991", 
+            "modified": "2014-11-19T10:57:45Z", 
+            "title": "Dummy Cheese", 
+            "img": "http://i.cdn.turner.com/cnn/2010/SHOWBIZ/Music/03/16/music.videos.future/t1larg.telephone.gaga.courtesy.jpg",
+            "active": true, 
+            "publisher": [
+                {
+                    "id": 198881, 
+                    "name": "Freshmilk NetTV"
+                }
+            ]
+        }, 
+        {
+            "id": 794448881, 
+            "additional_id": "fmasd988", 
+            "modified": "2014-11-19T10:57:45Z", 
+            "title": "Dummy Snap", 
+            "img": "http://fc03.deviantart.net/fs71/i/2010/354/5/3/__monologue___music_video_by_tubbums32-d359hps.png",
+            "active": true, 
+            "publisher": [
+                {
+                    "id": 198881, 
+                    "name": "Freshmilk NetTV"
+                }
+            ]
+        }, 
+        {
+            "id": 8922228881, 
+            "additional_id": "fmasd987", 
+            "modified": "2014-11-19T10:57:45Z", 
+            "title": "Dummy Videooo", 
+            "img": "http://www.econtractorsunlimited.com/images/music.jpg",
+            "active": true, 
+            "publisher": [
+                {
+                    "id": 198881, 
+                    "name": "Freshmilk NetTV"
+                }
+            ]
+        }
+    ]
+}

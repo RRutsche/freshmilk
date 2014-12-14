@@ -1,0 +1,37 @@
+/**
+ * This document defines all used variables 
+ */
+
+
+/**
+ * Colors
+ */
+$color-white: #FFF;
+$color-light-grey: #f0f0f0;
+$color-grey-1: #aaaaaa;
+$color-dark-grey: #565656;
+$color-border-default: #aaaaaa;
+
+$color-cyan-1: #aacee2;
+
+/**
+ * Fonts
+ */
+$font_bold: 'Frutiger Bold', Arial, sans-serif;
+$font_normal: 'Frutiger Roman', Arial, sans-serif;
+$font-size-normal: 16px;
+$font-size-small: 12px;
+$font-size-big: 20px;
+$font-size-xxl: 34px;
+
+
+/**
+ * Dimension
+ */
+$bill-table-width: 23vw;
+$menu-content-width: 100vw - $bill-table-width;
+$menu-top-element-height: 66px;
+$border-radius: 4px;
+$border-radius-big: 20px;
+$default-spacing: 10px;
+$navbar-height: 60px;

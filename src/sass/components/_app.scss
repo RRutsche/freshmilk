@@ -1,0 +1,15 @@
+.app {
+	padding-top: $navbar-height;
+	margin: $default-spacing;
+
+	.create-new-playlist {
+		margin-bottom: $default-spacing;
+	}
+	.playlist {
+
+	}
+
+	.playlists-videos {
+		@include display-flex();
+	}
+}

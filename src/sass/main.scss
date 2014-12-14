@@ -1,0 +1,16 @@
+/* Vendor Dependencies */
+@import "compass";
+@import "compass/reset";
+@import "compass/css3/box-sizing";
+@import "compass/css3/images";
+@import "compass/css3/user-interface";
+@import "compass/css3/flexbox";
+
+/* our dependencies */
+@import "components/variables";
+@import "components/globals";
+@import "components/app";
+@import "components/playlists";
+@import "components/videos";
+@import "components/videoslider";
+@import "components/navbar";

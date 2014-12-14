@@ -1,0 +1,42 @@
+.videos {
+	@include flex(1 1 auto);
+
+	.videos-title {
+		font-size: $font-size-big;
+		margin: $default-spacing;
+	}
+
+	.videos-inner {
+		height: 500px;
+		overflow-y: auto;
+		border: 1px solid $color-border-default;
+		border-radius: $border-radius;
+
+		input {
+			border-radius: $border-radius $border-radius 0 0;
+		}
+		.video-selection {
+			@include display-flex();
+			@include flex-direction(row);
+			.video-filter {
+				@include flex(0 1 auto);
+				padding: 0 $default-spacing 0 $default-spacing;
+				border-right: 1px solid $color-border-default;
+			}
+			.video-titles {
+				@include flex(0 1 auto);
+				margin-left: $default-spacing;
+				li {
+					cursor: -moz-grab;
+					cursor: -webkit-grab;
+					cursor: grab;
+					&:active {
+						cursor: -moz-grabbing;
+						cursor: -webkit-grabbing;
+						cursor: grabbing;
+					}
+				}
+			}
+		}
+	}
+}
