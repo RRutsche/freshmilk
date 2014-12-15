@@ -50,7 +50,7 @@ var Playlists = React.createClass({
 						</div>
 						<div className='playlist-videos' onDrop={this.onDrop} onDragOver={this.onDragOver}>
 							<ul>
-								{this.getPlaylistVideos()}
+								{this.getPlaylistVideos(playlists)}
 							</ul>
 						</div>
 					</div>
@@ -89,8 +89,8 @@ var Playlists = React.createClass({
 	 * Returns the videos of the active playlist as REACT component
 	 * @return {REACTComponent} list of videos
 	 */
-	getPlaylistVideos: function() {
-		var playlist = this.props.playlistCollection.get(this.props.activePlaylist),
+	getPlaylistVideos: function(playlists) {
+		var playlist = playlists.get(this.props.activePlaylist),
 			videos = [];
 
 		if (playlist) {
