@@ -1,3 +1,8 @@
+/**
+ * APP component represents the root of the web app.
+ * Initializes Collections for Videos and Playlists and handles playlist adding
+ * @module 	react/components/App
+ */
 var React = require('react');
 var Button = require('react-bootstrap/Button');
 /** Views */
@@ -41,11 +46,17 @@ var About = React.createClass({
 				</div>);
 	},
 
+	/**
+	 * Init videocollection and add new playlist on component start
+	 */
 	componentDidMount: function() {
 		this.setVideoCollection();		
 		this.addNewPlaylist();
 	},
 
+	/**
+	 * Update view with new videoCollection if fetching of content is finished
+	 */
 	setVideoCollection: function() {
 		var that = this;
 		videoCollection = new VideoCollection();
@@ -58,6 +69,9 @@ var About = React.createClass({
 		});
 	},
 
+	/**
+	 * Adds a new playlist to the playlist collection and updates view
+	 */
 	addNewPlaylist: function() {
 		var playlist = new PlaylistModel({name: 'Playlist ' + (this.state.playlistCollection.length+1)});
 
@@ -68,6 +82,10 @@ var About = React.createClass({
 		});
 	},
 
+	/**
+	 * Adds a new video to the current playlist, updates view
+	 * @param {Object} video Videomodel
+	 */
 	addVideoToPlaylist: function(video) {
 		var playlist = this.state.playlistCollection.get(this.state.activePlaylist),
 			playlistVideos = playlist.get('videos'),
@@ -80,6 +98,9 @@ var About = React.createClass({
 		});
 	},
 
+	/**
+	 * Defines the active playlist
+	 */
 	setActivePlaylist: function(playlist) {
 		this.setState({
 			activePlaylist: playlist

@@ -1,3 +1,7 @@
+/**
+ * Video Model with properties matching the freshmilk video data structure
+ * @module models/VideoModel		
+ */
 var Backbone = require('backbone');
 
 var VideoModel = Backbone.Model.extend({
