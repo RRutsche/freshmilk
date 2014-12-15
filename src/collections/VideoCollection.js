@@ -1,3 +1,7 @@
+/**
+ * Represents the collection of videos fetched from the freshmilk api
+ * @module collections/VideoCollection
+ */
 var Backbone = require('backbone');
 var DateJs = require('datejs');
 var Video = require('../models/VideoModel');
@@ -11,6 +15,16 @@ var VideoCollection = Backbone.Collection.extend({
         return item.get('title').toLowerCase();
     },
 
+    /**
+     * Returns a filtered collection depending on the given search criterias
+     * @param  {String} searchString    searchfield input
+     * @param  {Boolean} week           modified this week
+     * @param  {Boolean} month          modified this month
+     * @param  {Boolean} year           modified this year
+     * @param  {Boolean} lastyear       modified 2013
+     * @param  {Boolean} yearbeforelast modified 2012
+     * @return {VideoCollection}        filtered videoCollection
+     */
 	customFilter: function(searchString, week, month, year, lastyear, yearbeforelast) {
 		filtered = this.filter(function(video) {
 			var videoDate = Date.parse(video.get('modified')),

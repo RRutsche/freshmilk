@@ -1,3 +1,7 @@
+/**
+ * Represents a collection of playlists
+ * @module collections/PlaylistCollection
+ */
 var Backbone = require('backbone');
 var PlaylistModel = require('../models/PlaylistModel');
 
