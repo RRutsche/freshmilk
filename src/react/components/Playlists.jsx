@@ -1,6 +1,9 @@
+/**
+ * REACT Component representing the playlists collection
+ * @module 	react/components/Playlists
+ */
 var React = require('react/addons');
 var Input = require('react-bootstrap/Input');
-var Dropzone = require('react-dropzone');
 
 var Playlists = React.createClass({
 	mixins: [React.addons.LinkedStateMixin],
@@ -56,6 +59,10 @@ var Playlists = React.createClass({
 		);
 	},
 
+	/**
+	 * Executes addVideoToPlaylist callback function on video drop 
+	 * @param  {Event} event drag event with text data = {cid: 'someId'}
+	 */
 	onDrop: function(event) {
 		event.preventDefault();
 		var data;
@@ -71,10 +78,17 @@ var Playlists = React.createClass({
 		event.preventDefault();
 	},
 
+	/**
+	 * Executes props callback on playlist click
+	 */
 	setActivePlaylist: function(playlist) {
 		this.props.setActivePlaylist(playlist);
 	},
 
+	/**
+	 * Returns the videos of the active playlist as REACT component
+	 * @return {REACTComponent} list of videos
+	 */
 	getPlaylistVideos: function() {
 		var playlist = this.props.playlistCollection.get(this.props.activePlaylist),
 			videos = [];

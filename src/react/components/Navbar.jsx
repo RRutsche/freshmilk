@@ -1,3 +1,7 @@
+/**
+ * A navbar with dummy content
+ * @module 	react/components/Navbar
+ */
 var React = require('react');
 
 var Navbar = React.createClass({

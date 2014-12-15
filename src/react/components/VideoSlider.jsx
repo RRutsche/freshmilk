@@ -1,3 +1,7 @@
+/**
+ * REACT Component representing a Videoslider with dummy video content and images 
+ * @module 	react/components/Videos
+ */
 var React = require('react');
 /** dummy api */
 var dummyApi = require('../../assets/dummyVideos.json');
@@ -36,6 +40,9 @@ var VideoSlider = React.createClass({
 		this.getSliderVideos();
 	},
 
+	/**
+	 * Creates a new DummyCollection of dummy videos and updates view
+	 */
 	getSliderVideos: function() {
 		var videos = [],
 			dummyVideos = dummyApi.results,
@@ -50,6 +57,9 @@ var VideoSlider = React.createClass({
 		});
 	},
 
+	/**
+	 * Video click handler: Adds video to current playlist
+	 */
 	addVideoToPlaylist: function(video) {
 		this.props.addVideoToPlaylist(video);
 	}

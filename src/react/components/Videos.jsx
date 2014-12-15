@@ -1,3 +1,7 @@
+/**
+ * REACT Component representing the Videos collection with searchbar and filter options
+ * @module 	react/components/Videos
+ */
 var React = require('react');
 var Input = require('react-bootstrap/Input');
 var Util = require('../../util/Util.js');
@@ -55,7 +59,6 @@ var Videos = React.createClass({
 											data-id={video.cid}
 											key={video.cid}
 											draggable='true'
-											onDrop={this.drop}
 											onDragStart={this.onDragStart}>
 											{video.get('title')}</li>;
 									}, this)
@@ -68,19 +71,16 @@ var Videos = React.createClass({
 		);
 	},
 
+	/**
+	 * Get cid of dragged list item and add datatransfer
+	 * @param  {Event} e drag event
+	 */
 	onDragStart: function(e) {
 		e.dataTransfer.effectAllowed = 'move';
 		var data = {
 			cid: e.currentTarget.getAttribute('data-id')
 		};
 		e.dataTransfer.setData("text/plain", JSON.stringify(data));
-	},
-
-	onDrop: function(e) {
-		console.log(e);
-	},
-
-	changeFilter: function(event) {
 	}
 
 });
